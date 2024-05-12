@@ -32,7 +32,7 @@ const postsRoutes = new Elysia({ prefix: "/posts" })
     body: t.Object(
       {
         title: t.Optional(t.String({ minLength: 3, maxLength: 50 })),
-        conent: t.Optional(t.String({ minLength: 3, maxLength: 50 })),
+        content: t.Optional(t.String({ minLength: 3, maxLength: 50 })),
       },
       {
         minProperties: 1,
