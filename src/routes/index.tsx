@@ -1,7 +1,7 @@
 import Elysia from "elysia";
 import { html } from "@elysiajs/html";
 import postsRoutes from "./posts";
-import Landing from "./landing";
+import Landing from "../components/landing";
 
 const root = new Elysia()
   .use(html())
