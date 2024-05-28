@@ -1,7 +1,13 @@
-import { Post } from "@prisma/client";
+import { Post, User } from "@prisma/client";
 
-export interface Res {
+export interface PostResponse {
   status: number;
   message: string;
   data: Post | Post[] | null;
+}
+
+export interface UserResponse {
+  status: number;
+  message: string;
+  data: User | User[] | null;
 }

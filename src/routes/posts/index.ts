@@ -7,7 +7,7 @@ import {
   updatePost,
 } from "./handlers";
 
-const postsRoutes = new Elysia({ prefix: "/posts" })
+const postsRoutes = new Elysia({ prefix: "/posts", tags: ["Post"] })
   // get all posts
   .get("/", () => getPosts())
 
